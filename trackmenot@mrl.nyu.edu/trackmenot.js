@@ -1114,7 +1114,7 @@ TRACKMENOT.TMNSearch = function () {
 		};
 		log(logMessage);
 		burstEngine = burst_engine;
-		burstCount = roll(3, 10);
+		burstCount = roll(2, 6);
 	}
 
 	function deleteTabWithUrl(tabURL) {
