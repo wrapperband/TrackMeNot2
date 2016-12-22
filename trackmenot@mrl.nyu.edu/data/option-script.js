@@ -1,4 +1,3 @@
-
 var tmn_options = {};
 var log_shown = false;
 var debug_script = false;
@@ -121,7 +120,7 @@ function TMNShowValidatedFeeds(feedObject) {
 
 function TMNShowLog(tmnlogs) {
     var logs = tmnlogs.logs
-    var htmlStr = '<div style="height:1000px;overflow:scroll;"><table witdh=500 cellspacing=3 bgcolor=white  scrolling="yes" frame=border>';
+    var htmlStr = '<div style="height:1000px;overflow:scroll;"><table width=500 cellspacing=3 bgcolor=white  scrolling="yes" frame=border>';
     htmlStr += '<thead><tr align=left>';
     htmlStr += '<th>Engine</th>';
     htmlStr += '<th>Mode</th>';
@@ -170,7 +169,7 @@ function TMNShowQueries(param) {
     var queries = param.queries.split(',');
 	var sources = param.sources;
 	var htmlStr =  '<a href="#dhs">DHS</a> | <a href="#rss"> RSS </a> | <a href="#popular"> Popular </a>|<a href="#extracted"> Extracted</a>'
-	htmlStr += '<div style="height:1000px;overflow:scroll;"><table witdh=500 cellspacing=3 bgcolor=white  frame=border >';
+	htmlStr += '<div style="height:1000px;overflow:scroll;"><table width=500 cellspacing=3 bgcolor=white  frame=border >';
     if ( sources.dhs ) {
 		htmlStr += '<tr style="color:Black"  bgcolor=#D6E0E0 align=center>';
 		htmlStr += '<td > DHS Monitored <td>';
