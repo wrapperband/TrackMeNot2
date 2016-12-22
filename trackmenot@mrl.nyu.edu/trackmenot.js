@@ -938,7 +938,7 @@ TRACKMENOT.TMNSearch = function () {
 				if (queryWords.length > 3) {
 					getSubQuery(queryWords);
 					if (useIncrementals) {
-						var unsatisfiedNumber = roll(1, 4);
+						var unsatisfiedNumber = roll(0, 3);
 						for (var n = 0; n < unsatisfiedNumber - 1; n++)
 							getSubQuery(queryWords);
 					}
