@@ -1,7 +1,7 @@
 #TrackMeNot2
 **A security / privacy add-on Firefox edition**
 
-TrackMeNot2 contains a number of enhancements and bug fixes over TrackMeNot. This fork documents the changes made to Firefox release of 0.9.1.
+TrackMeNot2 contains a number of enhancements and bug fixes over TrackMeNot. This fork documents the changes made to Firefox release of TrackMeNot 0.9.2.
 
 TrackMeNot initiates searches based on RSS feeds to supply key words. It can be used to generate some interesting "random" searches of the internet or "noise" in searches and web interaction to reduce quality of data stored by profilers.
 
