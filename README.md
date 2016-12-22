@@ -3,12 +3,13 @@
 
 TrackMeNot2 contains a number of enhancements and bug fixes over TrackMeNot. This fork documents the changes made to Firefox release of 0.9.1.
 
-Track me not initiates searches based on RSS feeds to supply key words. It can be used to generate some interesting "random" searches of the internet or "noise" in searches and web interaction to reduce quality of data stored by profilers.
+TrackMeNot initiates searches based on RSS feeds to supply key words. It can be used to generate some interesting "random" searches of the internet or "noise" in searches and web interaction to reduce quality of data stored by profilers.
 
 
 TrackMeNot contains many hard coded variables. This extended version documents how to run a modified version and the changes you can make to include your own customisation.
 
-Currently firefox add-ons are signed, so the aim would be to make all variables customise-able. Ultimately, it could be envisaged to include additional self modifying or self customisation to make an updated version called **Browser Bot**, which can be used to "intelligently search" / learn to oppose a Bot teacher, or research and BookMark relevant pages from a seed keywords file.
+Currently Firefox add-ons are signed (by Mozilla), so the aim would be to make all variables customise-able. Ultimately, it could be envisaged to include additional self modifying or self customisation to make an updated version called **Browser Bot**, which can be used to "intelligently search" / learn to oppose a Bot teacher, or research and BookMark relevant pages from a seed keywords file.
+
 
 ### Running a customised version of TrackMeNot  
 
