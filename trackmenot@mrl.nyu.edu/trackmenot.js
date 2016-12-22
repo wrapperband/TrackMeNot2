@@ -1062,24 +1062,24 @@ TRACKMENOT.TMNSearch = function () {
 		return false;
 	}
 
-	function reschedule() {
-		var delay = tmn_timeout;
-
-		if (tmn_scheduledSearch)
-			return;
-		else
-			tmn_scheduledSearch = true;
-
-		if (isBursting()) { // schedule for burs
-			delay = Math.min(delay, burstTimeout);
-			scheduleNextSearch(delay);
-			tmn_mode = 'burst';
-			burstCount--;
-		} else { // Not bursting, schedule per usual
-			tmn_mode = 'timed';
-			scheduleNextSearch(delay);
-		}
-	}
+    function reschedule() {
+        "use strict";
+        var delay = tmn_timeout;
+        if (tmn_scheduledSearch) {
+            return;
+        } else {
+               tmn_scheduledSearch = true;
+            }
+        if (isBursting()) {      // schedule for burst
+            delay = Math.min(delay, burstTimeout);
+            scheduleNextSearch(delay);
+            tmn_mode = "burst";
+            burstCount--;
+         } else {     // Not bursting, schedule per usual
+            tmn_mode = "timed";
+            scheduleNextSearch(delay);
+            }
+     }
 
     function scheduleNextSearch(delay) {
         if (!enabled)
