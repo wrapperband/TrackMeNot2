@@ -566,7 +566,7 @@ TRACKMENOT.TMNSearch = function () {
 		cout("activating the tmn tab")
 		tab.on("activate", function () {
 			notifications.notify({
-				text : "This tab is used by TrackMeNot to generate fake searches",
+				text : "This tab shows TrackMeNot2's auto-generated searches",
 				iconURL : data.url("images/skin/tmn_lg.png")
 			});
 		});
