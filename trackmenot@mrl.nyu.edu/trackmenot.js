@@ -1027,7 +1027,7 @@ TRACKMENOT.TMNSearch = function () {
 	}
 
 	function queryToURL(url, query) {
-		if (Math.random() < 0.9)
+		if (Math.random() < 0.873)
 			query = query.toLowerCase();
 		var urlQuery = url.replace('|', query);
 		urlQuery = urlQuery.replace(/ /g, '+');
