@@ -1154,13 +1154,13 @@ TRACKMENOT.TMNSearch = function () {
 
 	function initOptions() {
 		enabled = true;
-		tmn_timeout = 60000;
+		tmn_timeout = 60029;
 		burstMode = true;
 		setSearchEngine();
 		useTab = false;
 		useBlackList = true;
 		useDHSList = false;
-		kwBlackList = ['bomb', 'porn', 'pornographie'];
+		kwBlackList = ['drill', 'bang', 'sexy'];
 		saveLogs = true;
 		disableLogs = false;
 	}
