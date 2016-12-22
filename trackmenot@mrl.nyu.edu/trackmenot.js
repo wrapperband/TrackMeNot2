@@ -1,11 +1,11 @@
 /*******************************************************************************
-This file is part of TrackMeNot (Chrome version).
+This file is part of TrackMeNot3 (Firefox version).
 
-TrackMeNot is free software: you can redistribute it and/or modify
+TrackMeNot2 is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation,  version 2 of the License.
 
-TrackMeNot is distributed in the hope that it will be useful,
+TrackMeNot2is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
@@ -80,6 +80,7 @@ TRACKMENOT.TMNSearch = function () {
 	var useBlackList = true;
 	var useDHSList = false;
 	var typeoffeeds = [];
+        // zeitgeist affects searches it's updated but needs to be made user configurable
 	var zeitgeist = ["salsa", "dance", "disco", "names", "dress", "ring", "night", "pics", "amazing", "shop", "buy", "ship", "post", "cables", "comics", "eye", "stone", "rock", "farm", "zoo", "folding", "origami", "diet", "fats", "chips", "local", "your great", "bitcoin", "sad", "survived", "scandal", "innocents", "shoes", "cats", "Saint", "quaint", "village", "ancient", "treen", "handmade", "friendly", "cool", "silly", "really?", "phone", "book", "boss", "pram", "carrot", "recipe", "cuisine", "pud", "mega", "gold", "silver", "bronze", "race", "whitewash", "whistle", "blower", "fake", "lion", "cake", "mow", "canal", "barge", "glass", "paint", "painters", "brush", "clean", "sea life", "travel", "hotel", "site", "beach", "quaint shop", "adventure", "boots", "present", "Newt", "frog", "pond", "perch", "chubb", "doors", "locks", "bash", "skirt", "diamond", "bride", "fancy", "deco", "century", "history", "tower", "games", "record", "smile", "like", "kudos"];
 	var tmn_timeout = 6023;
 	var prev_engine = "None";
