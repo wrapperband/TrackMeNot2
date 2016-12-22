@@ -935,7 +935,7 @@ TRACKMENOT.TMNSearch = function () {
 			else {
 				newquery = getQuery();
 				var queryWords = newquery.split(' ');
-				if (queryWords.length > 3) {
+				if (queryWords.length > 2) {
 					getSubQuery(queryWords);
 					if (useIncrementals) {
 						var unsatisfiedNumber = roll(0, 3);
