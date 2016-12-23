@@ -1083,39 +1083,34 @@ TRACKMENOT.TMNSearch = function () {
             }
      }
 
-    function scheduleNextSearch(delay) {
-        if (!enabled)
-             {
-                  return;
-             }
-        if (delay > 0) {
-            if (!isBursting()) { // randomize to approach target frequency
-                var offset = delay * (Math.random() / 2);
-                delay = parseInt(delay) + offset;
-            } else { // just simple randomize during a burst
-                delay += delay * (Math.random() - 0.5);
-            }
+
+        function scheduleNextSearch(delay) {
+                if (!enabled) {
+                        return;
+                }
+                if (delay > 0) {
+                        if (!isBursting()) { // randomize to approach target frequency
+                                delay = parseInt(delay * 0.75) + (delay * (Math.random() / 2));  // reduce to one line
+                        } else { // just simple randomize during a burst
+                                delay += delay * (Math.random() - 0.5);
+                        }
+                } else {
+                       return; // needs a log error message delay = 0
+                      }
+                if (isBursting())
+                        engine = burstEngine;
+                else {
+                        engine = chooseEngine(searchEngines.split(','));
+                      }
+                debug('NextSearchScheduled on: ' + engine);
+                tmn_errTimeout = timer.setTimeout(rescheduleOnError, delay + (delay * (Math.random() * 4))); //tmn_errTimeout=timer.setTimeout(rescheduleOnError, delay * 3);
+                delay = parseInt(delay * 0.66) + (delay * (Math.random() / 3));  // randomising delay
+                tmn_searchTimer = timer.setTimeout(doSearch, delay);
+                tmn_timeTillNextSearch = getTimeNow() + delay;
+                cout("Time till next search: " + delay);
         }
-        else
-        {
-            return; // needs a log error message if delay = 0
-        }
-        if (isBursting())
-            {
-            engine = burstEngine;
-            }
-        else
-            {
-            engine = chooseEngine(sEngines.split(","));
-            debug("NextSearchScheduled on: " + engine);
-            tmn_errTimeout = timer.setTimeout(rescheduleOnError, delay + (delay * (Math.random() * 2)));
-            var offset = delay * (Math.random() / 2);
-            delay = parseInt(delay) + offset;
-            tmn_searchTimer = timer.setTimeout(doSearch, delay);
-            tmn_timeTillNextSearch = getTimeNow() + delay;
-            cout("Time till next search: "+ delay);
-            }
-    }
+
+
 
 	function enterBurst(burst_engine) {
 		if (!burstEnabled)
