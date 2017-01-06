@@ -12,7 +12,7 @@
   function  _cout (msg) { console.log(msg);  }
   
   function showHelp() {
-    window.open("http://www.cs.nyu.edu/trackmenot/faq.html");
+    window.open("https://github.com/wrapperband/TrackMeNot2");
   }
 
     
