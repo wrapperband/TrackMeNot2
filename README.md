@@ -56,9 +56,15 @@ note that the files are in the compressed directory
 
 Clone the source code         
       
-git clone https://github.com/wrapperband/TrackMeNot.git  
+git clone https://github.com/wrapperband/TrackMeNot2.git  
 
-The files can be edited and copied into the running system (compressed.xpi), then the system restarted to activate the changes.  
+Latest version is in development : 
+
+git checkout 2.0-dev  
+
+
+
+The files can be edited and copied into the running system (compressed.xpi), in the firfox add-ons, then the firefox browser can be restarted to activate the changes.  
 
 
 It is relatively easy to copy in an updated version of trackmenot.js . This file is in the root director so arc viewer can handle it.  
